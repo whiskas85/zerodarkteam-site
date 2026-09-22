@@ -31,14 +31,19 @@ export default function HomeSito() {
       <section className="relative flex min-h-[100dvh] items-center overflow-hidden pt-16">
         {/* La copertina: la squadra al visore notturno, sotto le stelle. Il
             verde è già quello del sito. Due veli la scuriscono dove c'è da
-            leggere — a sinistra il testo, in basso il passaggio alla pagina. */}
+            leggere — a sinistra il testo, in basso il passaggio alla pagina.
+            Sul telefono la foto sta al centro; dal tablet in su si sposta un
+            po' a destra, per lasciare spazio al testo senza coprire nessuno. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/immagini/copertina.webp"
           alt="La squadra Zero Dark in pattuglia, di notte, vista al visore notturno"
-          className="absolute inset-0 h-full w-full object-cover object-[65%_center]"
+          className="absolute inset-0 h-full w-full object-cover object-center md:object-[65%_center]"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-bg via-bg/75 to-bg/10" />
+        {/* sul telefono il testo copre tutta la larghezza: il velo è uniforme,
+            così la foto resta simmetrica; dal tablet in su scurisce solo a
+            sinistra, dove sta il testo */}
+        <div className="pointer-events-none absolute inset-0 bg-bg/55 md:bg-transparent md:bg-gradient-to-r md:from-bg md:via-bg/75 md:to-bg/10" />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-bg to-transparent" />
 
         {/* gli angoli del mirino, come nel visore */}
