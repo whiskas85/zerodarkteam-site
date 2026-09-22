@@ -1,0 +1,20 @@
+# Il sito gira accanto al gestionale, sulla stessa macchina. Non pubblica
+# porte: ci arriva il proxy del gestionale, che manda qui www.zerodarkteam.it.
+# Si aggancia alla rete del gestionale per due motivi: il proxy deve
+# raggiungerlo, e lui deve raggiungere OPS per consegnare i contatti.
+services:
+  sito:
+    build: .
+    container_name: zd-sito
+    restart: unless-stopped
+    environment:
+      OPS_URL: ${OPS_URL:-http://app:3000}
+      CHIAVE_OPS: ${CHIAVE_OPS:?serve la chiave generata in OPS}
+      TZ: Europe/Rome
+    networks:
+      - ops
+
+networks:
+  ops:
+    name: ${RETE_OPS:-gestionale_default}
+    external: true
