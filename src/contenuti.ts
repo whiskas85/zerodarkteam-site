@@ -35,9 +35,9 @@ export const INTERESSI = [
       'Il gioco tattico come lo intendiamo noi: pianificazione, movimento coordinato, comunicazione. Vince la squadra, non il singolo.',
   },
   {
-    nome: 'Tracking',
+    nome: 'Trekking',
     testo:
-      'Leggere il terreno: tracce, segni di passaggio, direzioni. Sapere dove è passato qualcuno, e far sì che nessuno sappia dove siamo passati noi.',
+      'Chilometri a piedi con lo zaino in spalla, su e giù per boschi e colline. Le pattuglie lunghe si vincono con le gambe e con il fiato, e si allenano camminando.',
   },
   {
     nome: 'Cartografia',
