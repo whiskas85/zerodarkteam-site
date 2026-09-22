@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ASSOCIAZIONE, LINK_SOCIAL } from '@/contenuti';
+import { ASSOCIAZIONE, EMAIL, LINK_SOCIAL } from '@/contenuti';
 import { Scena } from '@/components/Scena';
 import { LinkIcona } from '@/components/IconaLink';
 import { ModuloContatto } from './ModuloContatto';
@@ -56,7 +56,11 @@ export default function ContattiSito() {
                 nella squadra segue i nuovi arrivati, e non li diamo a nessun altro. Se dopo la
                 telefonata non se ne fa niente, li cancelliamo; se decidi di venire, diventano la tua
                 scheda nella squadra. Puoi chiederci in qualsiasi momento di vederli, correggerli o
-                cancellarli, rispondendo alla nostra telefonata o scrivendoci sui nostri canali.
+                cancellarli, rispondendo alla nostra telefonata o scrivendo a{' '}
+                <a href={`mailto:${EMAIL}`} className="text-ink/80 underline underline-offset-2 hover:text-nvg">
+                  {EMAIL}
+                </a>
+                .
               </p>
             </div>
           </div>
@@ -71,6 +75,13 @@ export default function ContattiSito() {
                 </li>
               ))}
             </ol>
+            {/* per chi preferisce scrivere, o ha una domanda che non è «voglio provare» */}
+            <div>
+              <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.3em] text-muted">Oppure scrivici</p>
+              <a href={`mailto:${EMAIL}`} className="break-all text-sm text-ink/90 hover:text-nvg">
+                {EMAIL}
+              </a>
+            </div>
             <div>
               <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.3em] text-muted">Oppure seguici</p>
               <div className="flex gap-2">

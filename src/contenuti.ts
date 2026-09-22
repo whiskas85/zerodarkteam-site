@@ -11,6 +11,9 @@ import type { TipoLink } from './components/IconaLink';
 
 type Link = { tipo: TipoLink; url: string };
 
+/** Dove scriverci: nella pagina contatti, in fondo a ogni pagina, nell'informativa. */
+export const EMAIL = 'info@zerodarkteam.it';
+
 /** Il gestionale della squadra: il pulsante «Entra in OPS» porta qui. */
 export const INDIRIZZO_GESTIONALE = 'https://ops.zerodarkteam.it';
 

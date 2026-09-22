@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 import './globals.css';
-import { ASSOCIAZIONE, INDIRIZZO_GESTIONALE, LINK_SOCIAL } from '@/contenuti';
+import { ASSOCIAZIONE, EMAIL, INDIRIZZO_GESTIONALE, LINK_SOCIAL } from '@/contenuti';
 import { LinkIcona } from '@/components/IconaLink';
 
 /**
@@ -98,6 +98,9 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
                 <LinkIcona key={l.url} tipo={l.tipo} url={l.url} descrizione={l.descrizione} />
               ))}
             </div>
+            <a href={`mailto:${EMAIL}`} className="mt-3 block hover:text-nvg">
+              {EMAIL}
+            </a>
           </div>
           <div className="text-sm text-muted md:text-right">
             <Link href="/contatti" className="block hover:text-nvg">
