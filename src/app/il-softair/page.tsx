@@ -55,7 +55,7 @@ export default function IlSoftair() {
       {/* ---------------------------------------------------------- intestazione */}
       <section className="relative overflow-hidden border-b border-line pb-16 pt-32">
         <Scena nome="il softair" alt="" className="absolute inset-0 opacity-25" />
-        <div className="relative mx-auto max-w-4xl px-4 md:px-8">
+        <div className="relative mx-auto max-w-4xl px-7 md:px-8">
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.4em] text-nvg">Guida per chi inizia</p>
           <h1 className="text-4xl font-bold uppercase leading-[1.05] tracking-tight md:text-6xl">
             Il softair,
@@ -73,7 +73,7 @@ export default function IlSoftair() {
 
       {/* -------------------------------------------------------------- cos'è */}
       <section className="border-t border-line py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="01" sopra="Che cos’è">
             Una simulazione, <span className="text-nvg">non un combattimento</span>
           </Titolo>
@@ -109,7 +109,7 @@ export default function IlSoftair() {
 
       {/* -------------------------------------------------------------- regole */}
       <section className="border-t border-line bg-surface/40 py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="02" sopra="Le regole">
             Sei cose che valgono <span className="text-nvg">su ogni campo</span>
           </Titolo>
@@ -133,7 +133,7 @@ export default function IlSoftair() {
 
       {/* ------------------------------------------------------------ modalità */}
       <section className="border-t border-line py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="03" sopra="Come si gioca">
             Dalla domenica al campo <span className="text-nvg">alla gara di notte</span>
           </Titolo>
@@ -171,7 +171,7 @@ export default function IlSoftair() {
 
       {/* -------------------------------------------------------- attrezzatura */}
       <section className="border-t border-line bg-surface/40 py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="04" sopra="L’attrezzatura">
             Cosa serve <span className="text-nvg">davvero</span>
           </Titolo>
@@ -195,7 +195,7 @@ export default function IlSoftair() {
 
       {/* -------------------------------------------------------- prima volta */}
       <section className="border-t border-line py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="05" sopra="La prima volta">
             Come si viene <span className="text-nvg">a provare</span>
           </Titolo>
@@ -213,7 +213,7 @@ export default function IlSoftair() {
 
       {/* ------------------------------------------------------------ domande */}
       <section className="border-t border-line bg-surface/40 py-20">
-        <div className="mx-auto max-w-4xl px-4 md:px-8">
+        <div className="mx-auto max-w-4xl px-7 md:px-8">
           <Titolo numero="06" sopra="Domande">
             Quelle che ci fanno <span className="text-nvg">sempre</span>
           </Titolo>
@@ -247,7 +247,7 @@ export default function IlSoftair() {
       {/* ----------------------------------------------------------- chiamata */}
       <section className="relative overflow-hidden border-t border-line py-24">
         <Scena nome="prima giornata" alt="" className="absolute inset-0 opacity-25" />
-        <div className="relative mx-auto max-w-3xl px-4 text-center">
+        <div className="relative mx-auto max-w-3xl px-7 text-center">
           <h2 className="text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Letto tutto? <span className="text-nvg">Adesso vieni a provare</span>
           </h2>

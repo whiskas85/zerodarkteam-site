@@ -83,21 +83,21 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
       </header>
 
       {/* ---------------------------------------------------------- linguetta */}
-      {/* L'invito a provare non scorre via con la copertina: resta appeso al
-          bordo sinistro per tutta la pagina. Sul telefono no — una linguetta
-          fissa coprirebbe le prime lettere di ogni riga: lì la stessa
-          chiamata sta in cima al menu. */}
+      {/* L'invito a provare non scorre via con la copertina: resta appeso a
+          metà del bordo sinistro per tutta la pagina, sul telefono come sul
+          computer — lì più stretta. Sta nel margine e non sul testo: per
+          questo sul telefono le pagine hanno il margine un po' più largo. */}
       <Link
         href="/contatti"
-        className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-center gap-2.5 rounded-r-md bg-nvg px-1.5 py-4 text-bg shadow-nvg transition-transform hover:translate-x-0.5 md:flex"
+        className="fixed left-0 top-1/2 z-30 flex -translate-y-1/2 flex-col items-center gap-2 rounded-r-md bg-nvg px-1 py-3 text-bg shadow-nvg transition-transform hover:translate-x-0.5 md:gap-2.5 md:px-1.5 md:py-4"
       >
         {/* il mirino: la stessa cosa che si vede negli angoli della copertina */}
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="h-3 w-3 md:h-[15px] md:w-[15px]" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
           <circle cx="12" cy="12" r="7" />
           <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
           <path d="M12 1v4M12 19v4M1 12h4M19 12h4" strokeLinecap="round" />
         </svg>
-        <span className="[writing-mode:vertical-rl] rotate-180 text-[11px] font-semibold uppercase tracking-[0.25em]">
+        <span className="[writing-mode:vertical-rl] rotate-180 text-[9px] font-semibold uppercase tracking-[0.2em] md:text-[11px] md:tracking-[0.25em]">
           Vuoi provare?
         </span>
       </Link>
@@ -106,7 +106,7 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
 
       {/* -------------------------------------------------------- piè di pagina */}
       <footer className="border-t border-line bg-surface/60">
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-3 md:px-8">
+        <div className="mx-auto grid max-w-6xl gap-8 px-7 py-10 md:grid-cols-3 md:px-8">
           <div className="flex items-center gap-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/immagini/logo.jpg" alt="Zero Dark Team" width={64} height={64} className="rounded-full" />

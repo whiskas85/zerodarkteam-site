@@ -32,7 +32,7 @@ export default function ContattiSito() {
     <>
       <section className="relative overflow-hidden pb-12 pt-28">
         <Scena nome="contatti" alt="" className="absolute inset-0 opacity-40" />
-        <div className="relative mx-auto max-w-6xl px-4 md:px-8">
+        <div className="relative mx-auto max-w-6xl px-7 md:px-8">
           <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.35em] text-nvg">Contatti</p>
           <h1 className="text-4xl font-bold uppercase tracking-tight md:text-6xl">
             Vuoi <span className="text-nvg">provare?</span>
@@ -46,7 +46,7 @@ export default function ContattiSito() {
       </section>
 
       <section className="border-t border-line py-16">
-        <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-[1fr_20rem] md:px-8">
+        <div className="mx-auto grid max-w-6xl gap-12 px-7 md:grid-cols-[1fr_20rem] md:px-8">
           <div className="relative">
             <ModuloContatto />
 

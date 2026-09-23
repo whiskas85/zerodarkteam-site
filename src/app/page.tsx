@@ -55,7 +55,7 @@ export default function HomeSito() {
           <span className="absolute bottom-2 left-12 font-mono text-[10px] tracking-[0.3em] text-nvg/70">00:30 · GOING DARK</span>
         </div>
 
-        <div className="relative mx-auto w-full max-w-6xl px-4 md:px-8">
+        <div className="relative mx-auto w-full max-w-6xl px-7 md:px-8">
           <div>
             <p className="mb-4 font-mono text-xs uppercase tracking-[0.4em] text-nvg">Softair tattico</p>
             <h1 className="text-5xl font-bold uppercase leading-[0.95] tracking-tight md:text-7xl">
@@ -91,7 +91,7 @@ export default function HomeSito() {
       <section className="border-t border-line bg-surface/40">
         <Link
           href="/il-softair"
-          className="group mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-6 md:px-8"
+          className="group mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-7 py-6 md:px-8"
         >
           <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-nvg">Non hai mai giocato?</p>
           <p className="text-lg text-ink/85">
@@ -106,7 +106,7 @@ export default function HomeSito() {
 
       {/* ------------------------------------------------------------ chi siamo */}
       <section id="chi-siamo" className="scroll-mt-20 border-t border-line py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="01" sopra="Chi siamo">
             Una squadra, <span className="text-nvg">prima di tutto</span>
           </Titolo>
@@ -142,7 +142,7 @@ export default function HomeSito() {
 
       {/* --------------------------------------------------------------- valori */}
       <section id="valori" className="scroll-mt-20 border-t border-line bg-surface/40 py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="02" sopra="I valori del softair">
             Il codice che ci diamo <span className="text-nvg">in campo</span>
           </Titolo>
@@ -166,7 +166,7 @@ export default function HomeSito() {
 
       {/* ------------------------------------------------------------ ambizioni */}
       <section id="ambizioni" className="scroll-mt-20 border-t border-line py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="03" sopra="Le nostre ambizioni">
             Dove vogliamo <span className="text-nvg">misurarci</span>
           </Titolo>
@@ -203,7 +203,7 @@ export default function HomeSito() {
 
       {/* --------------------------------------------------------- affiliazioni */}
       <section id="affiliazioni" className="scroll-mt-20 border-t border-line bg-surface/40 py-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="mx-auto max-w-6xl px-7 md:px-8">
           <Titolo numero="04" sopra="Affiliazioni">
             Con chi <span className="text-nvg">giochiamo</span>
           </Titolo>
@@ -239,7 +239,7 @@ export default function HomeSito() {
 
       {/* --------------------------------------------------------------- seguici */}
       <section className="border-t border-line py-20">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2 md:px-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-7 md:grid-cols-2 md:px-8">
           <div>
             <Titolo numero="05" sopra="I nostri link">
               Seguici <span className="text-nvg">sul campo e fuori</span>
@@ -265,7 +265,7 @@ export default function HomeSito() {
       <section className="relative overflow-hidden border-t border-line py-24">
         {/* piu' tenue delle altre: qui sopra c'e' il titolo, e il mirino non deve contendergli l'occhio */}
         <Scena nome="contatto" alt="" className="absolute inset-0 opacity-25" />
-        <div className="relative mx-auto max-w-3xl px-4 text-center">
+        <div className="relative mx-auto max-w-3xl px-7 text-center">
           <h2 className="text-3xl font-bold uppercase tracking-tight md:text-5xl">
             Vuoi provare una giornata <span className="text-nvg">con noi?</span>
           </h2>
