@@ -179,3 +179,126 @@ export const AFFILIAZIONI = [
     ] as Link[],
   },
 ];
+
+// --------------------------------------------------------------- il softair
+// La pagina per chi non ha mai giocato: cos'è, come si gioca, cosa serve.
+// È la prima porta del sito — chi arriva da una ricerca passa di qui prima
+// ancora di sapere chi siamo.
+
+/** Le regole che valgono su ogni campo, prima di qualsiasi regolamento. */
+export const REGOLE = [
+  {
+    nome: 'Chi è colpito lo dichiara',
+    testo:
+      'Nessun arbitro vede ogni colpo. Quando un pallino arriva, si alza il braccio, si dice «colpito» e si esce dal gioco. È la regola che tiene in piedi tutto lo sport: chi non si dichiara, fuori dal campo.',
+  },
+  {
+    nome: 'Niente contatto fisico',
+    testo:
+      'È una simulazione, non un combattimento. Non ci si tocca, non si spinge, non si strattona: chi si trova a un passo risolve con la voce, non con le mani.',
+  },
+  {
+    nome: 'La regola del «bang»',
+    testo:
+      'A distanza ravvicinata non si spara: si dice «bang» e l’avversario si considera colpito. Costa un secondo, evita un livido e vale come una raffica.',
+  },
+  {
+    nome: 'Le protezioni non si tolgono',
+    testo:
+      'Occhiali balistici o maschera integrale, certificati, indossati per tutto il tempo in area di gioco. Un pallino nell’occhio non si rimedia: qui non esistono eccezioni.',
+  },
+  {
+    nome: 'Sicura e potenza',
+    testo:
+      'Fuori dal gioco la replica è in sicura e scarica. La potenza si misura al cronografo prima di entrare: sopra il limite del regolamento non si gioca.',
+  },
+  {
+    nome: 'Il campo si lascia com’era',
+    testo:
+      'Boschi, cascine, capannoni: si gioca a casa di qualcun altro. Niente a terra, niente rotto. Il campo di oggi deve esserci anche il mese prossimo.',
+  },
+];
+
+/** Cosa serve per giocare: l'ordine è quello che conta davvero. */
+export const ATTREZZATURA = [
+  {
+    nome: 'Le protezioni',
+    dettaglio: 'obbligatorie',
+    testo:
+      'Occhiali balistici certificati o maschera integrale. È l’unica voce su cui non si risparmia: si compra buona la prima volta e dura anni. Chi porta gli occhiali da vista sceglie una maschera che li contenga.',
+  },
+  {
+    nome: 'La replica',
+    dettaglio: 'elettrica, a gas o a molla',
+    testo:
+      'Le elettriche (AEG) sono le più diffuse fra chi inizia: affidabili, facili da far riparare, tante da scegliere. Le repliche a gas sono più realistiche e più delicate, quelle a molla più semplici e più lente.',
+  },
+  {
+    nome: 'Mimetica e scarponi',
+    dettaglio: 'comodità prima di tutto',
+    testo:
+      'Una mimetica coerente con quella della squadra e scarponi alti che tengano la caviglia. Si cammina molto, spesso fuori sentiero: le scarpe sbagliate rovinano la giornata più di qualsiasi avversario.',
+  },
+  {
+    nome: 'Radio e navigazione',
+    dettaglio: 'quando si cresce',
+    testo:
+      'Radio PMR per parlarsi, bussola e carta per muoversi, ATAK sul telefono per vedere dov’è la squadra. Non serve alla prima giornata: serve il giorno che si inizia a giocare per davvero.',
+  },
+  {
+    nome: 'Acqua, cibo e zaino',
+    dettaglio: 'sempre',
+    testo:
+      'Una pattuglia lunga si perde per la sete, non per i colpi. Almeno due litri d’acqua, qualcosa da mangiare, un cambio asciutto e una torcia se si gioca fino a sera.',
+  },
+  {
+    nome: 'Per la prima volta: niente',
+    dettaglio: 'parlane con noi',
+    testo:
+      'Non si compra nulla prima di aver provato. Scrivici e ci mettiamo d’accordo su cosa portare e cosa ti diamo noi: prima si prova, poi semmai si compra — e con un consiglio in più.',
+  },
+];
+
+/** Le domande che arrivano sempre, con le risposte che diamo sempre. */
+export const DOMANDE = [
+  {
+    domanda: 'Non ho mai giocato: posso venire lo stesso?',
+    risposta:
+      'È il caso più normale che ci sia. Alla prima giornata nessuno ti chiede di essere pronto: si viene, si guarda, si prova, e qualcuno della squadra ti sta accanto e ti spiega cosa sta succedendo.',
+  },
+  {
+    domanda: 'Fa male?',
+    risposta:
+      'Un pallino si sente, e a distanza ravvicinata lascia un segno che passa in un paio di giorni. Con gli abiti giusti e le protezioni è un fastidio di qualche secondo: per questo esiste la regola del «bang», e per questo non si spara addosso a chi è già colpito.',
+  },
+  {
+    domanda: 'Che età serve?',
+    risposta:
+      'Si gioca da maggiorenni. Per i minorenni servono il consenso di chi ne ha la responsabilità e il rispetto delle regole della federazione e del campo: se è il tuo caso, chiedici e ti diciamo come si fa.',
+  },
+  {
+    domanda: 'È legale?',
+    risposta:
+      'Sì. Per la legge italiana le repliche da softair sono giocattoli: non superano un joule, hanno l’estremità rossa e si vendono ai maggiorenni. Si usano nei campi e negli eventi, si trasportano custodite e non si portano in giro: fuori dal campo restano nella borsa.',
+  },
+  {
+    domanda: 'Serve il certificato medico?',
+    risposta:
+      'Per la prima giornata no: ti copre l’assicurazione giornaliera della federazione. Se poi decidi di restare, il tesseramento chiede il certificato medico sportivo — lo stesso di qualsiasi altro sport.',
+  },
+  {
+    domanda: 'Quanto dura una giornata?',
+    risposta:
+      'Una giornata normale sta in mezza giornata o poco più. Le gare sono un’altra cosa: una pattuglia a corto raggio dura qualche ora, una a lungo raggio può andare avanti tutta la notte.',
+  },
+  {
+    domanda: 'Devo essere allenato?',
+    risposta:
+      'Per venire a provare, no: si cammina insieme e il passo lo detta il più lento. Per le gare lunghe sì, e infatti ci alleniamo: chilometri con lo zaino, carta e bussola, e molta pazienza.',
+  },
+  {
+    domanda: 'Si gioca tutto l’anno?',
+    risposta:
+      'Sì. Ci troviamo ogni due settimane, d’estate e d’inverno, e in mezzo ci sono gare, corsi ed eventi. Il freddo e la pioggia fanno parte del gioco: cambiano l’equipaggiamento, non il programma.',
+  },
+];

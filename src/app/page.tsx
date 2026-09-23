@@ -85,6 +85,24 @@ export default function HomeSito() {
         </div>
       </section>
 
+      {/* --------------------------------------------- per chi non ha mai giocato */}
+      {/* Subito sotto la copertina, prima di raccontare noi: chi arriva senza
+          sapere cos'e' il softair deve trovare la sua porta al primo scorrimento. */}
+      <section className="border-t border-line bg-surface/40">
+        <Link
+          href="/il-softair"
+          className="group mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-6 md:px-8"
+        >
+          <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-nvg">Non hai mai giocato?</p>
+          <p className="text-lg text-ink/85">
+            Il softair spiegato bene: come funziona, le regole, cosa serve per iniziare.
+          </p>
+          <span className="ml-auto text-sm uppercase tracking-[0.15em] text-muted group-hover:text-nvg">
+            Leggi &rarr;
+          </span>
+        </Link>
+      </section>
+
       {/* ------------------------------------------------------------ chi siamo */}
       <section id="chi-siamo" className="scroll-mt-20 border-t border-line py-20">
         <div className="mx-auto max-w-6xl px-4 md:px-8">

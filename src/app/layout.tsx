@@ -50,6 +50,7 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
           </Link>
 
           <div className="ml-auto hidden items-center gap-6 text-xs uppercase tracking-[0.2em] text-muted lg:flex">
+            <Link href="/il-softair" className="hover:text-nvg">Il softair</Link>
             <a href="/#chi-siamo" className="hover:text-nvg">Chi siamo</a>
             <a href="/#valori" className="hover:text-nvg">Valori</a>
             <a href="/#ambizioni" className="hover:text-nvg">Missioni</a>
@@ -103,7 +104,10 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
             </a>
           </div>
           <div className="text-sm text-muted md:text-right">
-            <Link href="/contatti" className="block hover:text-nvg">
+            <Link href="/il-softair" className="block hover:text-nvg">
+              Il softair spiegato bene
+            </Link>
+            <Link href="/contatti" className="mt-1 block hover:text-nvg">
               Vuoi provare una giornata?
             </Link>
             <a href={`${INDIRIZZO_GESTIONALE}/login`} className="mt-1 block hover:text-nvg">
