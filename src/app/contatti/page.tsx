@@ -13,7 +13,12 @@ export const metadata: Metadata = {
 const PASSI = [
   { n: '01', titolo: 'Ci scrivi', testo: 'Nome e telefono bastano. Se vuoi, raccontaci qualcosa di te.' },
   { n: '02', titolo: 'Ti chiamiamo', testo: 'Nei giorni successivi, per conoscerci e rispondere alle tue domande.' },
-  { n: '03', titolo: 'Vieni in campo', testo: 'Ti proponiamo la prima giornata a cui puoi venire con noi.' },
+  {
+    n: '03',
+    titolo: 'Vieni in campo',
+    testo:
+      'Ti proponiamo la prima giornata a cui puoi venire. L’attrezzatura la mettiamo noi: tu porta scarpe comode.',
+  },
 ];
 
 /**
@@ -33,7 +38,8 @@ export default function ContattiSito() {
             Vuoi <span className="text-nvg">provare?</span>
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-ink/80">
-            Non serve essere esperti per cominciare: serve voglia di imparare e di stare in squadra.
+            Non serve essere esperti per cominciare, e non serve comprare niente: per la prima
+            giornata l’attrezzatura la mettiamo noi. Serve voglia di imparare e di stare in squadra.
             Lasciaci un contatto, e ne parliamo al telefono.
           </p>
         </div>

@@ -45,7 +45,7 @@ const PRIMA_VOLTA = [
   {
     passo: 'Vieni a provare',
     testo:
-      'Ti accogliamo, ti spieghiamo le regole di sicurezza e giochi con noi. Alla fine decidi tu: se ti è piaciuto ne riparliamo, se non fa per te ci siamo fatti una bella giornata lo stesso.',
+      'L’attrezzatura te la diamo noi: ti accogliamo, ti spieghiamo le regole di sicurezza e giochi con noi. Alla fine decidi tu: se ti è piaciuto ne riparliamo, se non fa per te ci siamo fatti una bella giornata lo stesso.',
   },
 ];
 
@@ -65,7 +65,8 @@ export default function IlSoftair() {
           <p className="mt-6 max-w-2xl text-lg text-ink/85">
             Non è una guerra e non è una sparatoria: è uno sport di squadra all’aperto, fatto di
             pattuglie, obiettivi e parola data. Qui trovi come funziona, cosa serve davvero per
-            iniziare e cosa succede se vieni a provare una giornata con noi.
+            iniziare e cosa succede se vieni a provare una giornata con noi. Per la prima volta non
+            ti serve niente: l’attrezzatura la mettiamo noi.
           </p>
         </div>
       </section>
@@ -251,8 +252,8 @@ export default function IlSoftair() {
             Letto tutto? <span className="text-nvg">Adesso vieni a provare</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink/80">
-            Si capisce in una giornata quello che non si capisce in dieci pagine. Lasciaci nome e
-            telefono: ti chiamiamo noi.
+            Si capisce in una giornata quello che non si capisce in dieci pagine. Non devi comprare
+            niente: l’attrezzatura la mettiamo noi. Lasciaci nome e telefono, ti chiamiamo noi.
           </p>
           <Link
             href="/contatti"

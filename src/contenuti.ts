@@ -253,9 +253,9 @@ export const ATTREZZATURA = [
   },
   {
     nome: 'Per la prima volta: niente',
-    dettaglio: 'parlane con noi',
+    dettaglio: 'te la diamo noi',
     testo:
-      'Non si compra nulla prima di aver provato. Scrivici e ci mettiamo d’accordo su cosa portare e cosa ti diamo noi: prima si prova, poi semmai si compra — e con un consiglio in più.',
+      'Alla prima giornata non devi comprare nulla: replica, protezioni e tutto quello che serve lo portiamo noi. Tu porta scarpe comode e voglia di camminare. Prima si prova, poi semmai si compra — e con un consiglio in più.',
   },
 ];
 
@@ -265,6 +265,11 @@ export const DOMANDE = [
     domanda: 'Non ho mai giocato: posso venire lo stesso?',
     risposta:
       'È il caso più normale che ci sia. Alla prima giornata nessuno ti chiede di essere pronto: si viene, si guarda, si prova, e qualcuno della squadra ti sta accanto e ti spiega cosa sta succedendo.',
+  },
+  {
+    domanda: 'Devo comprare l’attrezzatura per provare?',
+    risposta:
+      'No, e non devi nemmeno procurartela in prestito: per la prima giornata ti diamo noi tutto quello che serve — replica, protezioni, il resto. Tu porta scarpe comode, qualcosa da bere e abiti che non ti dispiaccia sporcare. Si compra dopo, se hai deciso di restare, e ti aiutiamo a scegliere.',
   },
   {
     domanda: 'Fa male?',

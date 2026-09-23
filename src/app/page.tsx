@@ -95,7 +95,8 @@ export default function HomeSito() {
         >
           <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-nvg">Non hai mai giocato?</p>
           <p className="text-lg text-ink/85">
-            Il softair spiegato bene: come funziona, le regole, cosa serve per iniziare.
+            Il softair spiegato bene: come funziona, le regole, e perché per provare non ti serve
+            comprare niente.
           </p>
           <span className="ml-auto text-sm uppercase tracking-[0.15em] text-muted group-hover:text-nvg">
             Leggi &rarr;
@@ -269,6 +270,7 @@ export default function HomeSito() {
             Vuoi provare una giornata <span className="text-nvg">con noi?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink/80">
+            Non serve che tu abbia niente: l’attrezzatura per la prima volta la mettiamo noi.
             Lasciaci nome e telefono: ti chiamiamo noi, ci conosciamo e ti diciamo quando è la
             prossima giornata a cui puoi venire.
           </p>
