@@ -1,8 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import Link from 'next/link';
 import './globals.css';
-import { ASSOCIAZIONE, EMAIL, INDIRIZZO_GESTIONALE, LINK_SOCIAL } from '@/contenuti';
+import { ASSOCIAZIONE, EMAIL, INDIRIZZO_GESTIONALE, LINK_SOCIAL, VOCI } from '@/contenuti';
 import { LinkIcona } from '@/components/IconaLink';
+import { Menu } from '@/components/Menu';
 
 /**
  * Il sito pubblico della squadra: la vetrina, non il gestionale. Vive per
@@ -40,37 +41,35 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
     <div className="relative min-h-[100dvh] overflow-x-hidden bg-bg text-ink">
       {/* ------------------------------------------------------------ testata */}
       <header className="fixed inset-x-0 top-0 z-40 border-b border-line/60 bg-bg/80 backdrop-blur-md">
-        {/* Tutta la larghezza: a sinistra il marchio, a destra — nell'angolo,
-            staccato da tutto il resto — l'ingresso a OPS. In mezzo il sito. */}
-        <nav className="flex items-center gap-4 px-4 py-3 md:gap-6 md:px-8">
+        {/* Tutta la larghezza: a sinistra il marchio — il nome della squadra
+            si vede sempre, anche sul telefono, perché è la prima cosa che
+            deve restare in testa — a destra l'ingresso a OPS e, sotto il
+            computer, il menu. */}
+        <nav className="flex items-center gap-3 px-4 py-3 md:gap-6 md:px-8">
           <Link href="/" className="flex shrink-0 items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/immagini/logo.jpg" alt="Zero Dark Team" width={36} height={36} className="rounded-full" />
-            <span className="hidden text-sm font-semibold uppercase tracking-[0.25em] sm:inline">Zero Dark</span>
+            <span className="text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-sm sm:tracking-[0.25em]">
+              Zero Dark Team
+            </span>
           </Link>
 
           <div className="ml-auto hidden items-center gap-6 text-xs uppercase tracking-[0.2em] text-muted lg:flex">
-            <Link href="/il-softair" className="hover:text-nvg">Il softair</Link>
-            <a href="/#chi-siamo" className="hover:text-nvg">Chi siamo</a>
-            <a href="/#valori" className="hover:text-nvg">Valori</a>
-            <a href="/#ambizioni" className="hover:text-nvg">Missioni</a>
-            <a href="/#affiliazioni" className="hover:text-nvg">Affiliazioni</a>
+            {VOCI.map((v) => (
+              <Link key={v.href} href={v.href} className="hover:text-nvg">
+                {v.testo}
+              </Link>
+            ))}
           </div>
-          <Link
-            href="/contatti"
-            className="ml-auto rounded-md border border-nvg bg-nvg/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-nvg transition-colors hover:bg-nvg hover:text-bg lg:ml-0"
-          >
-            Vuoi provare?
-          </Link>
 
           {/* L'ingresso per chi è già dentro: il gestionale della squadra, da
               solo nell'angolo. Una riga verticale lo separa dal sito, perché
               è un'altra porta e non un'altra pagina. */}
-          <span aria-hidden className="h-6 w-px bg-line" />
+          <span aria-hidden className="ml-auto hidden h-6 w-px bg-line lg:block" />
           <a
             href={`${INDIRIZZO_GESTIONALE}/login`}
             title="Entra in Zero Dark Ops, il portale della squadra"
-            className="flex shrink-0 items-center gap-1.5 rounded-md border border-line px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-ink/85 transition-colors hover:border-nvg hover:text-nvg"
+            className="ml-auto flex shrink-0 items-center gap-1.5 rounded-md border border-line px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-ink/85 transition-colors hover:border-nvg hover:text-nvg lg:ml-0"
           >
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3" />
@@ -78,8 +77,22 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
             <span className="hidden sm:inline">Entra in OPS</span>
             <span className="sm:hidden">OPS</span>
           </a>
+
+          <Menu />
         </nav>
       </header>
+
+      {/* ---------------------------------------------------------- linguetta */}
+      {/* L'invito a provare non scorre via con la copertina: resta appeso al
+          bordo sinistro per tutta la pagina. Sul telefono no — una linguetta
+          fissa coprirebbe le prime lettere di ogni riga: lì la stessa
+          chiamata sta in cima al menu. */}
+      <Link
+        href="/contatti"
+        className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 items-center rounded-r-md border border-l-0 border-nvg bg-bg/90 px-2 py-6 text-xs font-semibold uppercase tracking-[0.25em] text-nvg backdrop-blur transition-colors hover:bg-nvg hover:text-bg md:flex"
+      >
+        <span className="[writing-mode:vertical-rl] rotate-180">Vuoi provare?</span>
+      </Link>
 
       <main>{children}</main>
 

@@ -17,6 +17,19 @@ export const EMAIL = 'info@zerodarkteam.it';
 /** Il gestionale della squadra: il pulsante «Entra in OPS» porta qui. */
 export const INDIRIZZO_GESTIONALE = 'https://ops.zerodarkteam.it';
 
+/**
+ * Le voci del sito: in riga nella testata sul computer, nel menu a tendina
+ * sul telefono. Stanno qui perche' le legge sia la testata (che gira sul
+ * server) sia il menu (che gira nel browser): un elenco solo, non due.
+ */
+export const VOCI = [
+  { href: '/il-softair', testo: 'Il softair' },
+  { href: '/#chi-siamo', testo: 'Chi siamo' },
+  { href: '/#valori', testo: 'Valori' },
+  { href: '/#ambizioni', testo: 'Missioni' },
+  { href: '/#affiliazioni', testo: 'Affiliazioni' },
+];
+
 /** I nostri canali. `descrizione` finisce nel titolo dell'icona: di chi è il canale. */
 export const LINK_SOCIAL: (Link & { descrizione: string })[] = [
   { tipo: 'instagram', descrizione: '@zero.dark.team', url: 'https://www.instagram.com/zero.dark.team/' },
