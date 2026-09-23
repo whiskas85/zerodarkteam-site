@@ -89,9 +89,17 @@ export default function LayoutSito({ children }: { children: React.ReactNode }) 
           chiamata sta in cima al menu. */}
       <Link
         href="/contatti"
-        className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 items-center rounded-r-md border border-l-0 border-nvg bg-bg/90 px-2 py-6 text-xs font-semibold uppercase tracking-[0.25em] text-nvg backdrop-blur transition-colors hover:bg-nvg hover:text-bg md:flex"
+        className="fixed left-0 top-1/2 z-30 hidden -translate-y-1/2 flex-col items-center gap-2.5 rounded-r-md bg-nvg px-1.5 py-4 text-bg shadow-nvg transition-transform hover:translate-x-0.5 md:flex"
       >
-        <span className="[writing-mode:vertical-rl] rotate-180">Vuoi provare?</span>
+        {/* il mirino: la stessa cosa che si vede negli angoli della copertina */}
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="7" />
+          <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+          <path d="M12 1v4M12 19v4M1 12h4M19 12h4" strokeLinecap="round" />
+        </svg>
+        <span className="[writing-mode:vertical-rl] rotate-180 text-[11px] font-semibold uppercase tracking-[0.25em]">
+          Vuoi provare?
+        </span>
       </Link>
 
       <main>{children}</main>
