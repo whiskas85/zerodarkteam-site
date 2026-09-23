@@ -268,7 +268,27 @@ export const ATTREZZATURA = [
     nome: 'Per la prima volta: niente',
     dettaglio: 'te la diamo noi',
     testo:
-      'Alla prima giornata non devi comprare nulla: replica, protezioni e tutto quello che serve lo portiamo noi. Tu porta scarpe comode e voglia di camminare. Prima si prova, poi semmai si compra — e con un consiglio in più.',
+      'Alla prima giornata non devi comprare nulla: replica, protezioni e tutto quello che serve lo portiamo noi, per 25 €. Se l’attrezzatura ce l’hai già, la giornata è di 10 €. Prima si prova, poi semmai si compra — e con un consiglio in più.',
+  },
+];
+
+/**
+ * Quanto costa provare: le uniche due cifre che stanno sul sito.
+ *
+ * Il resto — tesseramento, quota della squadra — si dice al telefono, quando
+ * la persona ha già capito se le piace. Qui serve togliere l'unico dubbio che
+ * ferma chi non ha mai giocato: «e quanto mi costa per provare?».
+ */
+export const COSTI_PROVA = [
+  {
+    prezzo: '10 €',
+    quando: 'se hai la tua attrezzatura',
+    testo: 'Porti replica e protezioni tue: paghi solo la giornata.',
+  },
+  {
+    prezzo: '25 €',
+    quando: 'se te la prestiamo noi',
+    testo: 'Replica, protezioni e tutto il necessario li portiamo noi. Tu porta scarpe comode.',
   },
 ];
 
@@ -283,6 +303,11 @@ export const DOMANDE = [
     domanda: 'Devo comprare l’attrezzatura per provare?',
     risposta:
       'No, e non devi nemmeno procurartela in prestito: per la prima giornata ti diamo noi tutto quello che serve — replica, protezioni, il resto. Tu porta scarpe comode, qualcosa da bere e abiti che non ti dispiaccia sporcare. Si compra dopo, se hai deciso di restare, e ti aiutiamo a scegliere.',
+  },
+  {
+    domanda: 'Quanto costa provare?',
+    risposta:
+      'Dieci euro se hai già la tua attrezzatura, venticinque se te la prestiamo noi — in quel caso c’è dentro tutto quello che ti serve per giocare. Nient’altro: di tesseramento e quote se ne parla solo dopo, se decidi di restare.',
   },
   {
     domanda: 'Fa male?',

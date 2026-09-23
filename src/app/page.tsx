@@ -270,7 +270,8 @@ export default function HomeSito() {
             Vuoi provare una giornata <span className="text-nvg">con noi?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-ink/80">
-            Non serve che tu abbia niente: l’attrezzatura per la prima volta la mettiamo noi.
+            Non serve che tu abbia niente: l’attrezzatura per la prima volta la mettiamo noi, e la
+            giornata costa 25 € — 10 € se la tua ce l’hai già.
             Lasciaci nome e telefono: ti chiamiamo noi, ci conosciamo e ti diciamo quando è la
             prossima giornata a cui puoi venire.
           </p>

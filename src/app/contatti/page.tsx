@@ -17,7 +17,7 @@ const PASSI = [
     n: '03',
     titolo: 'Vieni in campo',
     testo:
-      'Ti proponiamo la prima giornata a cui puoi venire. L’attrezzatura la mettiamo noi: tu porta scarpe comode.',
+      'Ti proponiamo la prima giornata a cui puoi venire: 25 € con l’attrezzatura nostra, 10 € se hai già la tua.',
   },
 ];
 
